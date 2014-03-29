@@ -176,7 +176,6 @@ public final class Board extends JPanel implements Observer {
     public void setSquares() {
         int y = 0;
         int p = 0;
-
         //CONSTRUCT SQUARE OBJECTS
         for (int i = 0; i < 64; i++) {
             p = i;
@@ -189,7 +188,6 @@ public final class Board extends JPanel implements Observer {
             if ((i) % 8 == 0) {
                 p = 0;
             }
-
             if (isWhite) {
                 squares.add(new Square(Color.WHITE, (i + 1)));
                 squares.get(i).setBackground(Color.WHITE);
@@ -358,7 +356,7 @@ public final class Board extends JPanel implements Observer {
             ArrayList list = (ArrayList) arg;
             String turn = "";
             if (squares.get((Integer) list.get(1) - 1).getComponentCount() > 0) {
-                VisualPiece p = ((VisualPiece) squares.get((Integer) list.get(1) - 1).getComponent(0));
+                Piece p = ((Piece) squares.get((Integer) list.get(1) - 1).getComponent(0));
                 if (p.getColor() == Color.WHITE) {
                     turn = "W" + p.getType();
                 } else {
@@ -399,7 +397,7 @@ public final class Board extends JPanel implements Observer {
                 for (int j = 0; j < pieces.size(); j++) {
                     VisualPiece peice = pieces.get(j);
                     if (p.isQueenFromPawn() && peice.getPosition() == p.getPreviousPosition()) {
-                        VisualPiece pi = (VisualPiece) squares.get(p.getPreviousPosition() - 1).getComponent(0);
+                        Piece pi = (Piece) squares.get(p.getPreviousPosition() - 1).getComponent(0);
                         pieces.remove(pi);
                         squares.get(p.getPreviousPosition() - 1).remove(0);
                         VisualPiece piece = new VisualPiece(this, p, "Queen", p.getColor(), p.getPosition(), imageMap.get(p.getType()));
@@ -412,7 +410,7 @@ public final class Board extends JPanel implements Observer {
                         p.isQueenFromPawn(false);
                     } else {
                         if (p.getColor() == peice.getColor() && p.getPieceType().equals(peice.getType()) && p.getPreviousPosition() == peice.getPosition()) {
-                            getSquares().get(p.getPosition() - 1).add((VisualPiece) peice);
+                            getSquares().get(p.getPosition() - 1).add((Piece) peice);
                             peice.setPosition(p.getPosition());
                         }
                         if (p.getPreviousPosition() > 0) {
@@ -437,7 +435,7 @@ public final class Board extends JPanel implements Observer {
      */
     public void removeCapturedPieces() {
         if (!data.getCapturedPieces().isEmpty()) {
-            Non_Visual_Piece p = (Non_Visual_Piece) data.getCapturedPieces().get(data.getCapturedPieces().size() - 1);
+            Piece p = (Piece) data.getCapturedPieces().get(data.getCapturedPieces().size() - 1);
             for (int i = 0; i < pieces.size(); i++) {
                 if (pieces.get(i).getPiece().equals(p)) {
                     pieces.remove(pieces.get(i));

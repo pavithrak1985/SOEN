@@ -21,13 +21,8 @@ import java.io.Serializable;
  * @see Serializable
  * @version 1.5
  */
-public class Non_Visual_Piece implements Serializable {
+public class Non_Visual_Piece extends Piece implements Serializable {
 
-    private String type;
-    private int position;
-    private Color color;
-    private int countClicks;
-    private int previousPosition;
     private transient Chess_Data data;
     private boolean isCaptured;
     private boolean isMoved;
@@ -105,15 +100,6 @@ public class Non_Visual_Piece implements Serializable {
     }
 
     /**
-     * The method getColor simply returns the current color of the
-     * current piece to the caller
-     * @return color as a Color
-     */
-    public Color getColor() {
-        return color;
-    }
-
-    /**
      * The method canMove simply tells the game if the current piece can move or
      * not it is done by calling the Chess_Data isMoveable which checks the rules of the game
      * if that method returns true the piece can move otherwise it can not move
@@ -138,89 +124,6 @@ public class Non_Visual_Piece implements Serializable {
         if (data.getPiecePosition() > 0) {
             data.move(this.getPosition(), data.getPiecePosition());
         }
-    }
-
-    /**
-     * The method setColor simply sets the color of the piece to
-     * what the user chooses
-     * @param color as a Color
-     */
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
-    /**
-     * The method getPreviousPosition simply returns the previous position
-     * of the piece object
-     * @return previousPosition as an integer
-     */
-    public int getPreviousPosition() {
-        return previousPosition;
-    }
-
-    /**
-     * The method setPreviousPosition simply sets previous position of the piece
-     * @param previousPosition as an integer
-     */
-    public void setPreviousPosition(int previousPosition) {
-        this.previousPosition = previousPosition;
-    }
-
-    /**
-     * The method setPosition simply sets position of the piece
-     * @param position as an integer
-     */
-    public void setPosition(int position) {
-        this.position = position;
-    }
-
-    /**
-     * The method getPosition simply returns the position
-     * of the piece object
-     * @return position as an integer
-     */
-    public int getPosition() {
-        return position;
-    }
-
-    /**
-     * The method setType simply sets the type of the piece
-     * @param type as a String
-     */
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    /**
-     * The method getType simply returns the type of the piece to the caller
-     * @return type as a String
-     */
-    public String getType() {
-        return type;
-    }
-
-    /**
-     * The method getClickCount simply returns the clickCount on the current piece
-     * @return countClicks as an integer
-     */
-    public int getClickCount() {
-        return countClicks;
-    }
-
-    /**
-     * The method setClickCount simply sets clickCount of the piece
-     * @param countClicks as an integer
-     */
-    public void setClickCount(int countClicks) {
-        this.countClicks = countClicks;
-    }
-
-    /**
-     * The method getPieceType returns the type the user user
-     * @return as a String
-     */
-    public String getPieceType() {
-        return type.substring(1);
     }
 
     /**

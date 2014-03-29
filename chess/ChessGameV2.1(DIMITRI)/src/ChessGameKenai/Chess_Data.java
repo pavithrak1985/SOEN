@@ -364,7 +364,7 @@ public final class Chess_Data extends Observable {
      */
     public boolean isWinner() {
         for (int i = 0; i < capturedPieces.size(); i++) {
-            Non_Visual_Piece p = capturedPieces.get(i);
+            Piece p = capturedPieces.get(i);
             if (p.getPieceType().equals("King")) {
                 return true;
             }
@@ -401,7 +401,7 @@ public final class Chess_Data extends Observable {
      * @return clicked piece position as an integer
      */
     public int getPiecePosition() {
-        Non_Visual_Piece p;
+        Piece p;
         for (int i = 0; i < activePieces.size(); i++) {
             if (activePieces.get(i) != null) {
                 p = activePieces.get(i);
@@ -460,7 +460,7 @@ public final class Chess_Data extends Observable {
                                     if (counter == 0) {
                                         for (int i = 0; i < activePieces.size(); i++) {
                                             if (activePieces.get(i) != null) {
-                                                Non_Visual_Piece pi = activePieces.get(i);
+                                                Piece pi = activePieces.get(i);
                                                 if (pi.getColor() != p.getColor()) {
                                                     if (this.isMoveable(pi.getPosition(), 63) || this.isMoveable(pi.getPosition(), 62)) {
                                                         counter++;
@@ -494,7 +494,7 @@ public final class Chess_Data extends Observable {
                                         if (counter == 0) {
                                             for (int i = 0; i < activePieces.size(); i++) {
                                                 if (activePieces.get(i) != null) {
-                                                    Non_Visual_Piece pi = activePieces.get(i);
+                                                    Piece pi = activePieces.get(i);
                                                     if (pi.getColor() != p.getColor()) {
                                                         if (this.isMoveable(pi.getPosition(), 59) || this.isMoveable(pi.getPosition(), 58)) {
                                                             counter++;
@@ -528,7 +528,7 @@ public final class Chess_Data extends Observable {
                                     if (counter == 0) {
                                         for (int i = 0; i < activePieces.size(); i++) {
                                             if (activePieces.get(i) != null) {
-                                                Non_Visual_Piece pi = activePieces.get(i);
+                                                Piece pi = activePieces.get(i);
                                                 if (pi.getColor() != p.getColor()) {
                                                     if (this.isMoveable(pi.getPosition(), 6) || this.isMoveable(pi.getPosition(), 7)) {
                                                         counter++;
@@ -562,7 +562,7 @@ public final class Chess_Data extends Observable {
                                         if (counter == 0) {
                                             for (int i = 0; i < activePieces.size(); i++) {
                                                 if (activePieces.get(i) != null) {
-                                                    Non_Visual_Piece pi = activePieces.get(i);
+                                                    Piece pi = activePieces.get(i);
                                                     if (pi.getColor() != p.getColor()) {
                                                         if (this.isMoveable(pi.getPosition(), 2) || this.isMoveable(pi.getPosition(), 3)) {
                                                             counter++;

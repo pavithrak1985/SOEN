@@ -1,0 +1,423 @@
+<,adigun.idris@ymail.com,adigun.idris@ymail.com> <http://www.architexa.com/rdf/core#creator> "true" .
+
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#Class.atxa> a atxa-core:reloFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+atxa-core:docRoot atxa-core:browseModel "com.architexa.diagrams.relo.jdt/com.architexa.diagrams.relo.jdt.browse.ClassStrucBrowseModel" ;
+	atxa-core:contains _:node18ikm6tj0x1 .
+
+_:node18ikm6tj0x1 a atxa-core:node ;
+	atxa-core:model atxa-jdt-wkspc:ChessGameKenai ;
+	atxa-core:posX "363" ;
+	atxa-core:posY "314" .
+
+atxa-jdt-wkspc:ChessGameKenai atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces> .
+
+_:node18ikm6tj0x1 atxa-core:contains _:node18ikm6tj0x46 .
+
+_:node18ikm6tj0x46 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge> ;
+	atxa-core:posX "633" ;
+	atxa-core:posY "356" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.getOutputStream()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.killThread()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.ConnectionBridge(Chess_Data,ChessBoardView,boolean,InetAddress,Chat,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.update(Observable,Object,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.data> .
+
+_:node18ikm6tj0x47 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node18ikm6tj0x46 ;
+	rdf:object _:node18ikm6tj0x4 ;
+	atxa-core:bendpoint _:node18ikm6hf2x4062 .
+
+_:node18ikm6hf2x4062 atxa-core:bpLocation "866,317" ;
+	atxa-core:bpIndex "0" .
+
+_:node18ikm6tj0x47 atxa-core:bendpoint _:node18ikm6hf2x4063 .
+
+_:node18ikm6hf2x4063 atxa-core:bpLocation "1293,317" ;
+	atxa-core:bpIndex "1" .
+
+_:node18ikm6tj0x46 atxa-core:contains _:node18ikm6tj0x50 .
+
+_:node18ikm6tj0x50 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.getOutputStream()> ;
+	atxa-core:posX "634" ;
+	atxa-core:posY "390" .
+
+_:node18ikm6tj0x46 atxa-core:contains _:node18ikm6tj0x51 .
+
+_:node18ikm6tj0x51 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.killThread()> ;
+	atxa-core:posX "634" ;
+	atxa-core:posY "406" .
+
+_:node18ikm6tj0x46 atxa-core:contains _:node18ikm6tj0x52 .
+
+_:node18ikm6tj0x52 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.ConnectionBridge(Chess_Data,ChessBoardView,boolean,InetAddress,Chat,)> ;
+	atxa-core:posX "634" ;
+	atxa-core:posY "422" .
+
+_:node18ikm6tj0x46 atxa-core:contains _:node18ikm6tj0x53 .
+
+_:node18ikm6tj0x53 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.update(Observable,Object,)> ;
+	atxa-core:posX "634" ;
+	atxa-core:posY "438" .
+
+_:node18ikm6tj0x46 atxa-core:contains _:node18ikm6hf2x2833 .
+
+_:node18ikm6hf2x2833 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ConnectionBridge.data> ;
+	atxa-core:posX "634" ;
+	atxa-core:posY "374" .
+
+_:node18ikm6tj0x1 atxa-core:contains _:node18ikm6tj0x2 .
+
+_:node18ikm6tj0x2 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView> ;
+	atxa-core:posX "644" ;
+	atxa-core:posY "467" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.ChessBoardView(Chess_Data,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.loadCapturedPieces()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.resetAllSquares()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.update(Observable,Object,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.board> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.blackCapturedPiecesPanel> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.data> .
+
+_:node18ikm6tj0x3 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node18ikm6tj0x2 ;
+	rdf:object _:node18ikm6tj0x4 ;
+	atxa-core:bendpoint _:node18ikm6hf2x4064 .
+
+_:node18ikm6hf2x4064 atxa-core:bpLocation "828,317" ;
+	atxa-core:bpIndex "0" .
+
+_:node18ikm6tj0x3 atxa-core:bendpoint _:node18ikm6hf2x4065 .
+
+_:node18ikm6hf2x4065 atxa-core:bpLocation "1293,317" ;
+	atxa-core:bpIndex "1" .
+
+_:node18ikm6tj0x2 atxa-core:contains _:node18ikm6tj0x7 .
+
+_:node18ikm6tj0x7 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.ChessBoardView(Chess_Data,)> ;
+	atxa-core:posX "645" ;
+	atxa-core:posY "533" .
+
+_:node18ikm6tj0x2 atxa-core:contains _:node18ikm6tj0x8 .
+
+_:node18ikm6tj0x8 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.loadCapturedPieces()> ;
+	atxa-core:posX "645" ;
+	atxa-core:posY "549" .
+
+_:node18ikm6tj0x2 atxa-core:contains _:node18ikm6tj0x9 .
+
+_:node18ikm6tj0x9 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.resetAllSquares()> ;
+	atxa-core:posX "645" ;
+	atxa-core:posY "565" .
+
+_:node18ikm6tj0x2 atxa-core:contains _:node18ikm6tj0x10 .
+
+_:node18ikm6tj0x10 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.update(Observable,Object,)> ;
+	atxa-core:posX "645" ;
+	atxa-core:posY "581" .
+
+_:node18ikm6tj0x2 atxa-core:contains _:node18ikm6hf2x2836 .
+
+_:node18ikm6hf2x2836 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.board> ;
+	atxa-core:posX "645" ;
+	atxa-core:posY "485" .
+
+_:node18ikm6tj0x2 atxa-core:contains _:node18ikm6hf2x2837 .
+
+_:node18ikm6hf2x2837 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.blackCapturedPiecesPanel> ;
+	atxa-core:posX "645" ;
+	atxa-core:posY "501" .
+
+_:node18ikm6tj0x2 atxa-core:contains _:node18ikm6hf2x2838 .
+
+_:node18ikm6hf2x2838 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$ChessBoardView.data> ;
+	atxa-core:posX "645" ;
+	atxa-core:posY "517" .
+
+_:node18ikm6tj0x1 atxa-core:contains _:node18ikm6tj0x23 .
+
+_:node18ikm6tj0x23 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board> ;
+	atxa-core:posX "369" ;
+	atxa-core:posY "339" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.flipBoard()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.getCurrentBoard()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.Board(Chess_Data,ChessBoardView,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.getSquares()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.setSquares()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.setCurrentBoard(int,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.setBoard(int,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.update(Observable,Object,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.data> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.notifyView()> .
+
+_:node18ikm6tj0x24 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node18ikm6tj0x23 ;
+	rdf:object _:node18ikm6tj0x4 ;
+	atxa-core:bendpoint _:node18ikm6hf2x4066 .
+
+_:node18ikm6hf2x4066 atxa-core:bpLocation "500,317" ;
+	atxa-core:bpIndex "0" .
+
+_:node18ikm6tj0x24 atxa-core:bendpoint _:node18ikm6hf2x4067 .
+
+_:node18ikm6hf2x4067 atxa-core:bpLocation "1293,317" ;
+	atxa-core:bpIndex "1" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x30 .
+
+_:node18ikm6tj0x30 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.flipBoard()> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "373" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x31 .
+
+_:node18ikm6tj0x31 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.getCurrentBoard()> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "389" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x32 .
+
+_:node18ikm6tj0x32 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.Board(Chess_Data,ChessBoardView,)> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "405" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x33 .
+
+_:node18ikm6tj0x33 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.getSquares()> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "421" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x34 .
+
+_:node18ikm6tj0x34 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.setSquares()> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "437" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x35 .
+
+_:node18ikm6tj0x35 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.setCurrentBoard(int,)> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "453" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x36 .
+
+_:node18ikm6tj0x36 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.setBoard(int,)> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "469" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6tj0x37 .
+
+_:node18ikm6tj0x37 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.update(Observable,Object,)> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "485" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6hf2x2843 .
+
+_:node18ikm6hf2x2843 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.data> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "357" .
+
+_:node18ikm6tj0x23 atxa-core:contains _:node18ikm6hf2x4068 .
+
+_:node18ikm6hf2x4068 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Board.notifyView()> ;
+	atxa-core:posX "370" ;
+	atxa-core:posY "501" .
+
+_:node18ikm6tj0x1 atxa-core:contains _:node18ikm6tj0x38 .
+
+_:node18ikm6tj0x38 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data> ;
+	atxa-core:posX "1017" ;
+	atxa-core:posY "467" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.activePieces> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.capturedPieces> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.counter> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.isGameOnLine> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.isServer> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.isWhiteTurn> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.loadedPlayer> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.players> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.notifyView()> .
+
+_:node18ikm6tj0x39 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node18ikm6tj0x38 ;
+	rdf:object _:node18ikm6tj0x40 ;
+	atxa-core:bendpoint _:node18ikm6hf2x4069 .
+
+_:node18ikm6hf2x4069 atxa-core:bpLocation "1128,432" ;
+	atxa-core:bpIndex "0" .
+
+_:node18ikm6tj0x39 atxa-core:bendpoint _:node18ikm6hf2x4070 .
+
+_:node18ikm6hf2x4070 atxa-core:bpLocation "1144,432" ;
+	atxa-core:bpIndex "1" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3524 .
+
+_:node18ikm6hf2x3524 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.activePieces> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "485" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3525 .
+
+_:node18ikm6hf2x3525 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.capturedPieces> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "501" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3526 .
+
+_:node18ikm6hf2x3526 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.counter> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "517" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3527 .
+
+_:node18ikm6hf2x3527 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.isGameOnLine> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "533" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3528 .
+
+_:node18ikm6hf2x3528 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.isServer> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "549" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3529 .
+
+_:node18ikm6hf2x3529 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.isWhiteTurn> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "565" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3530 .
+
+_:node18ikm6hf2x3530 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.loadedPlayer> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "581" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x3531 .
+
+_:node18ikm6hf2x3531 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.players> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "597" .
+
+_:node18ikm6tj0x38 atxa-core:contains _:node18ikm6hf2x4071 .
+
+_:node18ikm6hf2x4071 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$Chess_Data.notifyView()> ;
+	atxa-core:posX "1018" ;
+	atxa-core:posY "613" .
+
+_:node18ikm6tj0x1 atxa-core:contains _:node18ikm6tj0x11 .
+
+_:node18ikm6tj0x11 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces> ;
+	atxa-core:posX "1246" ;
+	atxa-core:posY "431" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.getColor()> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.update(Observable,Object,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.CapturedPieces(Color,Board,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.paintComponent(Graphics,)> , <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.board> .
+
+_:node18ikm6tj0x12 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node18ikm6tj0x11 ;
+	rdf:object _:node18ikm6tj0x4 ;
+	atxa-core:bendpoint _:node18ikm6hf2x4072 .
+
+_:node18ikm6hf2x4072 atxa-core:bpLocation "1359,317" ;
+	atxa-core:bpIndex "0" .
+
+_:node18ikm6tj0x12 atxa-core:bendpoint _:node18ikm6hf2x4073 .
+
+_:node18ikm6hf2x4073 atxa-core:bpLocation "1293,317" ;
+	atxa-core:bpIndex "1" .
+
+_:node18ikm6tj0x11 atxa-core:contains _:node18ikm6tj0x19 .
+
+_:node18ikm6tj0x19 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.getColor()> ;
+	atxa-core:posX "1247" ;
+	atxa-core:posY "465" .
+
+_:node18ikm6tj0x11 atxa-core:contains _:node18ikm6tj0x20 .
+
+_:node18ikm6tj0x20 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.update(Observable,Object,)> ;
+	atxa-core:posX "1247" ;
+	atxa-core:posY "481" .
+
+_:node18ikm6tj0x11 atxa-core:contains _:node18ikm6tj0x21 .
+
+_:node18ikm6tj0x21 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.CapturedPieces(Color,Board,)> ;
+	atxa-core:posX "1247" ;
+	atxa-core:posY "497" .
+
+_:node18ikm6tj0x11 atxa-core:contains _:node18ikm6tj0x22 .
+
+_:node18ikm6tj0x22 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.paintComponent(Graphics,)> ;
+	atxa-core:posX "1247" ;
+	atxa-core:posY "513" .
+
+_:node18ikm6tj0x11 atxa-core:contains _:node18ikm6hf2x2830 .
+
+_:node18ikm6hf2x2830 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#ChessGameKenai$CapturedPieces.board> ;
+	atxa-core:posX "1247" ;
+	atxa-core:posY "449" .
+
+atxa-core:docRoot atxa-core:contains _:node18ikm6tj0x54 .
+
+_:node18ikm6tj0x54 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#java.util> ;
+	atxa-core:posX "1088" ;
+	atxa-core:posY "238" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#java.util> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#java.util$Observer> , <http://www.architexa.com/rdf/jdt-wkspc#java.util$Observable> .
+
+_:node18ikm6tj0x54 atxa-core:contains _:node18ikm6tj0x4 .
+
+_:node18ikm6tj0x4 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#java.util$Observer> ;
+	atxa-core:posX "1248" ;
+	atxa-core:posY "263" .
+
+_:node18ikm6tj0x54 atxa-core:contains _:node18ikm6tj0x40 .
+
+_:node18ikm6tj0x40 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#java.util$Observable> ;
+	atxa-core:posX "1094" ;
+	atxa-core:posY "378" .
+
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#Class.atxa> a atxa-core:reloFile ;
+	atxa-core:contains _:node18ikm6tj0x50 , _:node18ikm6tj0x51 , _:node18ikm6tj0x52 , _:node18ikm6tj0x53 , _:node18ikm6hf2x2833 , _:node18ikm6tj0x46 , _:node18ikm6tj0x7 , _:node18ikm6tj0x8 , _:node18ikm6tj0x9 , _:node18ikm6tj0x10 , _:node18ikm6hf2x2836 , _:node18ikm6hf2x2837 , _:node18ikm6hf2x2838 , _:node18ikm6tj0x2 , _:node18ikm6tj0x30 , _:node18ikm6tj0x31 , _:node18ikm6tj0x32 , _:node18ikm6tj0x33 , _:node18ikm6tj0x34 , _:node18ikm6tj0x35 , _:node18ikm6tj0x36 , _:node18ikm6tj0x37 , _:node18ikm6hf2x2843 , _:node18ikm6hf2x4068 , _:node18ikm6tj0x23 , _:node18ikm6hf2x3524 , _:node18ikm6hf2x3525 , _:node18ikm6hf2x3526 , _:node18ikm6hf2x3527 , _:node18ikm6hf2x3528 , _:node18ikm6hf2x3529 , _:node18ikm6hf2x3530 , _:node18ikm6hf2x3531 , _:node18ikm6hf2x4071 , _:node18ikm6tj0x38 , _:node18ikm6tj0x19 , _:node18ikm6tj0x20 , _:node18ikm6tj0x21 , _:node18ikm6tj0x22 , _:node18ikm6hf2x2830 , _:node18ikm6tj0x11 , _:node18ikm6tj0x1 , _:node18ikm6tj0x4 , _:node18ikm6tj0x40 , _:node18ikm6tj0x54 , atxa-core:docRoot , _:node18ikm6tj0x50 , _:node18ikm6tj0x51 , _:node18ikm6tj0x52 , _:node18ikm6tj0x53 , _:node18ikm6hf2x2833 , _:node18ikm6tj0x46 , _:node18ikm6tj0x7 , _:node18ikm6tj0x8 , _:node18ikm6tj0x9 , _:node18ikm6tj0x10 , _:node18ikm6hf2x2836 , _:node18ikm6hf2x2837 , _:node18ikm6hf2x2838 , _:node18ikm6tj0x2 , _:node18ikm6tj0x30 , _:node18ikm6tj0x31 , _:node18ikm6tj0x32 , _:node18ikm6tj0x33 , _:node18ikm6tj0x34 , _:node18ikm6tj0x35 , _:node18ikm6tj0x36 , _:node18ikm6tj0x37 , _:node18ikm6hf2x2843 , _:node18ikm6hf2x4068 , _:node18ikm6tj0x23 , _:node18ikm6hf2x3524 , _:node18ikm6hf2x3525 , _:node18ikm6hf2x3526 , _:node18ikm6hf2x3527 , _:node18ikm6hf2x3528 , _:node18ikm6hf2x3529 , _:node18ikm6hf2x3530 , _:node18ikm6hf2x3531 , _:node18ikm6hf2x4071 , _:node18ikm6tj0x38 , _:node18ikm6tj0x19 , _:node18ikm6tj0x20 , _:node18ikm6tj0x21 , _:node18ikm6tj0x22 , _:node18ikm6hf2x2830 , _:node18ikm6tj0x11 , _:node18ikm6tj0x1 , _:node18ikm6tj0x4 , _:node18ikm6tj0x40 , _:node18ikm6tj0x54 , atxa-core:docRoot , _:node18ikm6tj0x47 , _:node18ikm6tj0x3 , _:node18ikm6tj0x24 , _:node18ikm6tj0x39 , _:node18ikm6tj0x12 , _:node18ikm6tj0x47 , _:node18ikm6tj0x3 , _:node18ikm6tj0x24 , _:node18ikm6tj0x39 , _:node18ikm6tj0x12 .
+

@@ -129,11 +129,11 @@ public class CapturedPieces extends JPanel implements Observer {
      */
     public void update(Observable o, Object arg) {
         Chess_Data data = (Chess_Data) o;
-        VisualPiece pi = null;
+        Piece pi = null;
         if (!data.getCapturedPieces().isEmpty()) {
             Non_Visual_Piece p = (Non_Visual_Piece) data.getCapturedPieces().get(data.getCapturedPieces().size() - 1);
             if (board.getSquares().get(p.getPosition() - 1).getComponentCount() > 0) {
-                pi = (VisualPiece) board.getSquares().get(p.getPosition() - 1).getComponent(0);
+                pi = (Piece) board.getSquares().get(p.getPosition() - 1).getComponent(0);
                 if (this.getColor() == Color.WHITE && p.getColor() == Color.WHITE && p.isCaptured() && pi.getColor() == Color.WHITE) {
                     pi.setPreferredSize(new Dimension(64, 64));
                     this.add(pi);
