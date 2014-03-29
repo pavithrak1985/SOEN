@@ -26,7 +26,7 @@ public class Square extends JPanel {
 
     private int position;
     private Color currentColor;
-    private static Chess_Data data;
+    private static ChessData data;
     private Color previousColor;
 
     /**
@@ -117,7 +117,7 @@ public class Square extends JPanel {
          * Overloaded Constructor of the inner class
          * @param data the address of the model for later communication purposes
          */
-        protected SendData(Chess_Data data) {
+        protected SendData(ChessData data) {
             Square.data = data;
 
         }

@@ -73,7 +73,7 @@ public class Chat extends JPanel {
     private SimpleAttributeSet smpSet, smpSetUnderline;
     private Color color = Color.ORANGE;
     private ObjectOutputStream out;
-    private Chess_Data data;
+    private ChessData data;
     private String name = "";
     private DateFormat format = new SimpleDateFormat("MM/dd/yy");
     private Date dateNow = new Date();
@@ -86,7 +86,7 @@ public class Chat extends JPanel {
      * @param view as a ChessBoardView object
      * @param data as a Chess_Data object
      */
-    public Chat(ChessBoardView view, Chess_Data data) {
+    public Chat(ChessBoardView view, ChessData data) {
 
         this.view = view;
         this.data = data;

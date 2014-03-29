@@ -35,7 +35,7 @@ import javax.swing.JPanel;
 public class VisualPiece extends Piece {
 
     private String imagePath;
-    private Non_Visual_Piece piece;
+    private NonVisualPiece piece;
     private MouseListener listener;
     private Board board;
 
@@ -59,7 +59,7 @@ public class VisualPiece extends Piece {
      * @param position as an integer
      * @param imagePath as a String
      */
-    public VisualPiece(Board board, Non_Visual_Piece piece, String type, Color color, int position, String imagePath) {
+    public VisualPiece(Board board, NonVisualPiece piece, String type, Color color, int position, String imagePath) {
         this.position = position;
         this.board = board;
         this.color = color;

@@ -45,7 +45,7 @@ public class ConnectionBridge implements Observer {
     private InetAddress ipAddress;
     private ChessBoardView view;
     private ReadData readData;
-    private Chess_Data data;
+    private ChessData data;
     private Color color = Color.ORANGE;
     private SimpleAttributeSet smpSet = new SimpleAttributeSet();
     private Chat chat;
@@ -59,7 +59,7 @@ public class ConnectionBridge implements Observer {
      * @param ipAddress as an InetAddress
      * @param chat as a Chat
      */
-    public ConnectionBridge(Chess_Data data, ChessBoardView view, boolean isServer, InetAddress ipAddress, Chat chat) {
+    public ConnectionBridge(ChessData data, ChessBoardView view, boolean isServer, InetAddress ipAddress, Chat chat) {
         this.view = view;
         this.isServer = isServer;
         this.ipAddress = ipAddress;

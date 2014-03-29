@@ -18,17 +18,17 @@ import java.awt.EventQueue;
  * @see ChessBoardView class
  * @version 1.0
  */
-public class Start_Game {
+public class StartGame {
 
     /**
      * Empty Constructor of the class
      * When the object of this type is constructed it follows the strict rules
      * and instruction statements which are specified in the constructor
      */
-    public Start_Game() {
+    public StartGame() {
 
         //CONSTRUCT THE MODEL OBJECT
-        Chess_Data data = new Chess_Data();
+        ChessData data = new ChessData();
 
         //CONSTRUCT THE MAIN VIEW WHICH IS ALSO A CONTROLLER
         ChessBoardView cbv = new ChessBoardView(data);

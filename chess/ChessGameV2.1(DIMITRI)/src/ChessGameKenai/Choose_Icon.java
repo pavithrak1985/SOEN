@@ -48,7 +48,7 @@ public class Choose_Icon extends JDialog {
     private ButtonGroup btnGroup;
     private JPanel panel;
     private JButton applyButton;
-    private Chess_Data data;
+    private ChessData data;
     private ConnectionBridge bridge;
     private String playerIconPath;
 
@@ -58,7 +58,7 @@ public class Choose_Icon extends JDialog {
      * @param data as Chess_Data
      * @param bridge as a ConnectionBridge
      */
-    public Choose_Icon(Chess_Data data, ConnectionBridge bridge) {
+    public Choose_Icon(ChessData data, ConnectionBridge bridge) {
         this.bridge = bridge;
         this.data = data;
         c = this.getContentPane();

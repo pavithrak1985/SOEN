@@ -21,9 +21,9 @@ import java.io.Serializable;
  * @see Serializable
  * @version 1.5
  */
-public class Non_Visual_Piece extends Piece implements Serializable {
+public class NonVisualPiece extends Piece implements Serializable {
 
-    private transient Chess_Data data;
+    private transient ChessData data;
     private boolean isCaptured;
     private boolean isMoved;
     private boolean isQueenFromPawn;
@@ -38,7 +38,7 @@ public class Non_Visual_Piece extends Piece implements Serializable {
      * @param position as an integer
      * @param color as Color
      */
-    public Non_Visual_Piece(Chess_Data data, String type, int position, Color color) {
+    public NonVisualPiece(ChessData data, String type, int position, Color color) {
         this.type = type;
         this.position = position;
         this.color = color;

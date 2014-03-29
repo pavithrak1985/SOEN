@@ -42,7 +42,7 @@ public final class Board extends JPanel implements Observer {
     private boolean isWhite = true;
     private ArrayList<Square> squares;
     private HashMap<String, String> imageMap = new HashMap<String, String>();
-    private Chess_Data data;
+    private ChessData data;
     private ArrayList<VisualPiece> pieces = new ArrayList<VisualPiece>();
     private boolean isFirstTime = true;
     private ChessBoardView view;
@@ -59,7 +59,7 @@ public final class Board extends JPanel implements Observer {
      * @param data as Chess_Data
      * @param view as ChessBoardView
      */
-    public Board(Chess_Data data, ChessBoardView view) {
+    public Board(ChessData data, ChessBoardView view) {
         this.setLayout(null);
         squares = new ArrayList<Square>();
         this.data = data;
@@ -100,7 +100,7 @@ public final class Board extends JPanel implements Observer {
     public void populateBoard() {
         for (int i = 0; i < data.getActivePieces().size(); i++) {
             if (data.getActivePieces().get(i) != null) {
-                Non_Visual_Piece p = data.getActivePieces().get(i);
+                NonVisualPiece p = data.getActivePieces().get(i);
                 if (p.getType().equals("WKing")) {
                     pieces.add(new VisualPiece(this, p, "King", Color.WHITE, p.getPosition(), imageMap.get("WKing")));
                 } else if (p.getType().equals("BKing")) {
@@ -393,7 +393,7 @@ public final class Board extends JPanel implements Observer {
     public void redrawPieces() {
         for (int i = 0; i < data.getActivePieces().size(); i++) {
             if (data.getActivePieces().get(i) != null) {
-                Non_Visual_Piece p = data.getActivePieces().get(i);
+                NonVisualPiece p = data.getActivePieces().get(i);
                 for (int j = 0; j < pieces.size(); j++) {
                     VisualPiece peice = pieces.get(j);
                     if (p.isQueenFromPawn() && peice.getPosition() == p.getPreviousPosition()) {
