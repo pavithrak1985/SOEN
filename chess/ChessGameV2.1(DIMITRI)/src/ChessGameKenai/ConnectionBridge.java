@@ -180,11 +180,15 @@ public class ConnectionBridge implements Observer {
                     chat.getTxtPane().insertIcon(new ImageIcon(getClass().getResource(((Packet) object).getImgPath())));
                     chat.getTxtPane().setCaretPosition(chat.getTxtPane().getDocument().getLength());
                 }
+                setProperty set=new setProperty();
+                set.setPlayerIconPath(object);
                 if (packet.getPlayerIconPath() != null) {
-                    ConnectionBridge.this.setPlayerIconPath(object);
+                    //ConnectionBridge.this.setPlayerIconPath(object);
+                	set.setPlayerIconPath(object);
                 }
                 if (packet.getGuestName() != null) {
-                    ConnectionBridge.this.setGuestName(object);
+                    //ConnectionBridge.this.setGuestName(object);
+                    set.setGuestName(object);
                 }
                 if (packet.getRestartGame() != null) {
                     ConnectionBridge.this.restartGame();
@@ -241,7 +245,7 @@ public class ConnectionBridge implements Observer {
      * so he would also see that image changed
      * @param object as an Object
      */
-    public void setPlayerIconPath(Object object) {
+   /* public void setPlayerIconPath(Object object) {
         Packet packet = (Packet) object;
         if (data.isServer()) {
             data.getPlayers().get(1).setImagePath(packet.getPlayerIconPath());
@@ -258,7 +262,7 @@ public class ConnectionBridge implements Observer {
      * so he would also see that name changed
      * @param object as an Object
      */
-    public void setGuestName(Object object) {
+    /*public void setGuestName(Object object) {
         Packet packet = (Packet) object;
         if (data.isServer()) {
             data.getPlayers().get(1).setName(packet.getGuestName());
@@ -266,5 +270,5 @@ public class ConnectionBridge implements Observer {
             data.getPlayers().get(0).setName(packet.getGuestName());
         }
         data.notifyView();
-    }
+    }*/
 }
