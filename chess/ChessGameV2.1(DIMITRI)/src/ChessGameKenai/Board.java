@@ -353,24 +353,31 @@ public final class Board extends JPanel implements Observer {
             isFirstTime = false;
         }
         if (arg != null) {
-            ArrayList list = (ArrayList) arg;
-            String turn = "";
-            if (squares.get((Integer) list.get(1) - 1).getComponentCount() > 0) {
-                Piece p = ((Piece) squares.get((Integer) list.get(1) - 1).getComponent(0));
-                if (p.getColor() == Color.WHITE) {
-                    turn = "W" + p.getType();
-                } else {
-                    turn = "B" + p.getType();
-                }
-            }
-            view.getMoves().append(turn + " from: " + mapPositions.get(list.get(0)) + " to " + mapPositions.get(list.get(1)) + "\n");
-            view.getMoves().append("--------------------------\n");
-            view.getMoves().setCaretPosition(view.getMoves().getDocument().getLength());
+            squareposition(arg);
         }
         this.removeCapturedPieces();
         this.revalidate();
         this.repaint();
     }
+
+	/**
+	 * @param record the moves made by the data class and display on the view
+	 */
+	public void squareposition(Object arg) {
+		ArrayList list = (ArrayList) arg;
+		String turn = "";
+		if (squares.get((Integer) list.get(1) - 1).getComponentCount() > 0) {
+		    Piece p = ((Piece) squares.get((Integer) list.get(1) - 1).getComponent(0));
+		    if (p.getColor() == Color.WHITE) {
+		        turn = "W" + p.getType();
+		    } else {
+		        turn = "B" + p.getType();
+		    }
+		}
+		view.getMoves().append(turn + " from: " + mapPositions.get(list.get(0)) + " to " + mapPositions.get(list.get(1)) + "\n");
+		view.getMoves().append("--------------------------\n");
+		view.getMoves().setCaretPosition(view.getMoves().getDocument().getLength());
+	}
 
     /**
      * The method isFirstTime simply sets the boolean value to true or false
